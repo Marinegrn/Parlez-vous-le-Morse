@@ -38,7 +38,7 @@
 
 //Fonction encode(texte) {
     //Déclaration d'une constante qui stocke en valeur la fonction getLatinCharacterList(texte
-    // Déclaration d'une constante pour traduire chaque caractère de la liste en Morse, les séparer par un espace (méthode map)
+    // Déclaration d'une constante pour traduire chaque caractère de la liste en Morse, utilisation de la méthode map pour parcourir chaque caractère
 
         // si le caractère est strictement égal à un espace {
         // retourne un slash; séparateur de mots en morse
