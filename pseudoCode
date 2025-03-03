@@ -14,7 +14,7 @@
 //Sur le fichier JS principal (traducteur.js)
 
     //importer les constantes latinToMorse et morseToLatin du fichier dictionnaire.js
-    // Déclaration des constantes de tous les boutons et des champs de texte, récupération de éléments HTML (méthode getElementById)
+    // Déclaration des constantes de tous les boutons, récupération de éléments HTML (méthode getElementById)
 
 //Etape 1
 
