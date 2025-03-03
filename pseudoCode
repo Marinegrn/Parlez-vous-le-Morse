@@ -1,0 +1,95 @@
+                    //Objectif : créer un traducteur Francais/Latin to Morse. 
+
+
+// Démarage du projet
+
+    // Création d'un template HTML+CSS+JS
+    // Création d'un 2ème fichier JS contenant les 2 dictionnaires, afin d'exporter les constantes latinToMorse et morseToLatin dans le 1er fichier JS
+    // Petite conception User Interface résponsive - inspiration Sci-Fi (optionnel)
+    //Ranger dans l'ordre alphabétique le code Morse pour faciliter la recherche des caractères
+    //Création d'un bouton reset pour réinitialiser les champs de texte et les résultats
+    
+    // Doc' MDN pour les méthodes et les propriétés des éléments du DOM
+
+//Sur le fichier JS principal (traducteur.js)
+
+    //importer les constantes latinToMorse et morseToLatin du fichier dictionnaire.js
+    // Déclaration des constantes de tous les boutons et des champs de texte, récupération de éléments HTML (méthode getElementById)
+
+//Etape 1
+
+// Fonction getLatinCharacterList(texte) {
+    // retourne une liste de caractères latins, utilisation de la méthode split qui divise une chaîne de caractères en liste, de sous-chaînes, et les retourne dans un tableau
+//}
+
+    // Phase test: fonction getLatinCharacterList
+    //console.log("Test getLatinCharacterList:", getLatinCharacterList("Hello, world"));
+    // a affiché dans la console: ["H", "e", "l", "l", "o", ",", " ", "w", "o", "r", "l", "d"]
+
+
+// Etape 2
+
+//Fonction translateLatinCharacter(character) {
+    // Déclaration d'une constante qui convertit les caractères en majuscule (méthode toUpperCase) pour que les caractères soient reconnus en parcourant le dictionnaire
+    // retourne le caractère [paramètre] du tableau latinToMorse
+//}
+
+//Etape 3
+
+//Fonction encode(texte) {
+    //Déclaration d'une constante qui stocke en valeur la fonction getLatinCharacterList(texte
+    // Déclaration d'une constante pour traduire chaque caractère de la liste en Morse, les séparer par un espace (méthode map)
+
+        // si le caractère est strictement égal à un espace {
+        // retourne un slash; séparateur de mots en morse
+        //}
+        // retourne l'appel de la fonction translanteLatinCharacter(character)
+
+    // retourne la liste des caractères traduits en Morse (méthode join, concatène les éléments d'un tableau en une chaîne de caractères)
+//}
+
+
+// Etape 4: répéter les étapes 1 à 3 pour la traduction Morse vers Français/Latin
+
+// fonction getMorseCharacterList(morse) {
+    // retourne le paramètre morse (méthode split)
+//}
+
+// Fonction translanteMorseCharacter(morseChar) {
+    // retourne le caractère morse [paramètre] du tableau morseToLatin opérateur
+//}
+
+// Fonction decode(morse) {
+    //Déclaration d'une constante morseChars pour stocker en valeur l'appel de la fonction getMorseCharacterList(morse)
+    // Déclaration d'une constante latinChars ,qui stocke en valeur le paramètre morseChar, séparer par un espace (Utilisation de la méthode map pour parcourir chaque caractère) => Appel de la fonction translanteMorseCharacter(morseChar)
+    // retourne la constante latinChars avec la méthode join
+//}
+
+
+//Etape 5
+
+// Ajout de tous les écouteurs d'évenments sur les boutons (addEventListener)
+
+//encode Bouton.addEventListener('click', () => {
+    //Déclaration d'une variable latinText qui récupère la valeur de l'élement Id du DOM latinText (méthode value)
+    //Déclaration d'une résultat du morse qui stocke en valeur l'appel de la fonction encode avec pour argument la constante latinText
+    //Récupération de l'élement Id morseResult et modification de son contenu en dur avec la méthode textContent qui stocke en valeur la constante morseResult
+//})
+
+//decode Bouton.addEventListener('click', () => {
+    //Déclaration d'une variable morseCode qui récupère la valeur de l'élement Id du DOM morseCode (méthode value)
+    //Déclaration d'une résultat du latin qui stocke en valeur l'appel de la fonction decode avec pour argument la constante morseText
+    //Récupération de l'élement Id latinResult et modification de son contenu en dur avec la méthode textContent qui stocke en valeur la constante latinResult
+//})
+
+// Création d'une fonction qui permet de réinitialiser les champs de texte et les résultats
+//fonction reset() {
+
+    //Récupération de l'élement Id latinText (méthode value)
+    //Récupération de l'élement Id latinResult (méthode textContent)
+    //Récupération de l'élement Id morseCode (méthode value)
+    //Récupération de l'élement Id morseResult (méthode textContent)
+    
+//}
+
+// Appel de la fonction reset dans un écouteur d'événement sur le bouton reset
