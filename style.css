@@ -17,8 +17,7 @@ h1 {
     font-family: 'Saira';
     animation-duration: 3s;
     animation-name: slidein;
-    animation-iteration-count: 1;
-    
+    animation-iteration-count: 1;    
 }
 
 @keyframes slidein {
@@ -31,7 +30,7 @@ h1 {
       margin-left: 0%;
       width: 100%;
     }
-  }
+}
   
 .container {
     background-color: rgb(26, 24, 24);

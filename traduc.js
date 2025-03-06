@@ -1,10 +1,8 @@
 import { latinToMorse, morseToLatin  } from './dictionnaire.js';
 
-
 const encodeBtn = document.getElementById('encodeBtn');
 const decodeBtn = document.getElementById('decodeBtn');
 const resetBtn = document.getElementById('clearBtn');
-
 
 // Étape 1: Fonction pour obtenir un tableau de caractères à partir de l'alphabet latin/Français
 function getLatinCharacterList(text) {
@@ -17,13 +15,12 @@ function translateLatinCharacter(character) {
     return latinToMorse[upperChar];
 };
 
- // Étape 3: Fonction pour encoder du texte Français/Latin en code morse
+// Étape 3: Fonction pour encoder du texte Français/Latin en code morse
 function encode(text) {
     const characters = getLatinCharacterList(text);
-
     const morseChars = characters.map(character => { 
         if (character === ' ') {
-            return '/'; // Séparateur de mots en morse en Morse
+            return '/'; // Séparateur de mots en Morse
         };
         return translateLatinCharacter(character);
         });
